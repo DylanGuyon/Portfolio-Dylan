@@ -19,6 +19,7 @@ header {
     margin: 0; /* Enlève le margin par défaut */
     display: flex;
   }
+
   
   nav ul li {
     margin-left: 20px;
@@ -54,3 +55,71 @@ header {
     color: #007BFF; 
   }
   
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none; /* Masquer le bouton du menu mobile par défaut */
+  }
+  
+  /* Afficher le menu déroulant mobile lorsqu'il est ouvert */
+  .header-nav.open .header-menu {
+    display: none;
+  }
+  
+  .header-nav.open .modal {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+  }
+  
+  .modal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Enlève le margin par défaut */
+  }
+  
+  .modal-menu li {
+    margin-left: 20px;
+  }
+  
+  .modal-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px; /* Ajuster le padding pour une meilleure expérience tactile */
+    display: block;
+  }
+  
+  .modal-menu li a:hover {
+    color: #007BFF; 
+  }
+  
+  /* Afficher le bouton du menu mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      background: none;
+      border: none;
+    }
+  
+    .menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin-bottom: 5px;
+    }
+
+    .header-menu {
+      display: none;
+    }
+  }

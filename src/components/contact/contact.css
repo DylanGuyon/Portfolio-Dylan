@@ -100,6 +100,6 @@
 
     .contact-form-container,
     .contact-form {
-        width: 100%; /* Adapte le formulaire pour petits écrans */
+        width: 97%; /* Adapte le formulaire pour petits écrans */
     }
 }

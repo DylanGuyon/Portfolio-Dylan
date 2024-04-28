@@ -63,6 +63,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .description-container {
+        padding: 50px;
+    }
+
     .description-content {
         grid-template-columns: 1fr; /* Une seule colonne */
     }
