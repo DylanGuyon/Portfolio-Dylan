@@ -1,0 +1,105 @@
+.contact-container {
+    background-image: url('../../assets/test1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    color: #ffffff;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: start; 
+}
+
+.contact-text {
+    margin: auto;
+}
+
+.contact-text h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-text p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.contact-text a {
+    font-size: 1.2em;
+    color: #aad8d3;
+    text-decoration: none;
+}
+
+.contact-form-container {
+    width: 100%; 
+}
+
+.contact-form {
+    width: 100%; /* Taille fixe pour le formulaire */
+    max-width: 500px; /* Limite pour la largeur du formulaire */
+    margin: auto; /* Centrer le formulaire */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.contact-form button {
+    width: 50%; 
+    padding: 10px;
+    background-color: #333; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ajuster la position du bouton */
+    margin: 0 auto; /* Centrer le bouton */
+}
+
+.contact-form button:hover {
+    background-color: #444; /* Légèrement plus clair au survol */
+}
+
+.checkbox-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    margin-left: 8px;
+}
+
+.checkbox-container #rgpd {
+    width: 15px;
+    margin-top: 10px;
+}
+
+/* Adaptations pour les écrans plus petits */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-form-container,
+    .contact-form {
+        width: 100%; /* Adapte le formulaire pour petits écrans */
+    }
+}

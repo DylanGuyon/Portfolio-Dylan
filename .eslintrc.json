@@ -1,0 +1,7 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["react", "jsx-a11y"],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": ["off"]
+    }
+  }

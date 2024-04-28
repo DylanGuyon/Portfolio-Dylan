@@ -1,0 +1,77 @@
+.description-container {
+    background-color: #666565; /* Gris foncé */
+    padding: 100px; /* Ajuste le padding global du conteneur */
+}
+  
+.description-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 2000px;
+    margin: auto;
+    gap: 50px;
+}
+
+.description-text {
+    max-width: 600px; /* Largeur maximale du texte */
+    width: 100%; /* Utilisation de 100% de l'espace disponible */
+    text-align: center; /* Centre le texte horizontalement */
+    color: #fff; /* Texte blanc */
+    flex: 1; /* Permet au texte d'occuper l'espace restant après l'image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu du texte verticalement */
+    align-items: center; /* Centre les éléments enfants horizontalement dans leur conteneur */
+}
+
+.description-text h1, .description-text h2, .description-text p {
+    margin: 2px 0; /* Réduit la marge en haut et en bas */
+    padding: -150px;
+}
+  
+.description-text h1 {
+    font-size: 48px;
+    margin-bottom: 2px;
+}
+
+.description-text h2 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+  
+.description-image {
+    flex: 0 0 auto; /* Flexibilité de la largeur de l'image */
+}
+  
+.description-image img {
+    width: 100%; /* L'image prend toute la largeur du conteneur de l'image */
+    max-width: 800px; /* Largeur maximale de l'image */
+    height: auto; /* L'image conserve ses proportions */
+    border-radius: 10px; /* Bords arrondis */
+}
+
+.description-text,
+.description-image {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.description-content.show .description-text,
+.description-content.show .description-image {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 768px) {
+    .description-content {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .description-image {
+        display: none; /* Masquer l'image */
+    }
+
+    .description-text {
+        text-align: center; /* Centrer le texte horizontalement */
+    }
+}

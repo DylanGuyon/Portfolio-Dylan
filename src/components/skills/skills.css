@@ -1,0 +1,91 @@
+.skills-container {
+    background-image: url('../../assets/test2.jpg'); /* Image en arrière-plan */
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Ajuste le padding global du conteneur */
+  }
+  
+  .skills-content {
+    max-width: 2200px; /* Largeur maximale du contenu */
+    margin: auto; /* Centre le contenu horizontalement */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  
+  .skills-title {
+    text-align: center;
+    color: #fff; /* Texte blanc */
+}
+
+.divider {
+    width: 2px;
+    height: 0px; /* Hauteur de la barre de séparation */
+    background-color: #fff; /* Blanc */
+    margin: 0 auto; /* Centre horizontalement */
+    position: relative; /* Permet le positionnement absolu */
+    transition: height 0.5s ease-in-out; /* Transition lisse pour la hauteur */
+}
+
+.expand {
+    height: 530px; /* Hauteur finale après animation */
+    animation: expandHeight 1s ease forwards;
+}
+  
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 50px; /* Espacement entre les icônes */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+  
+.skills-icons img {
+    max-width: 100%;
+    height: auto;
+    transition-duration: 0.1s;
+}
+
+.skills-icons img:hover{
+    -webkit-transform: scale(1.05);
+}
+
+.skills-content.show .skills-icons {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+  .skills-icons img:hover + .tooltip {
+    opacity: 1; /* Affiche le tooltip au survol */
+  }
+  
+.tooltip {
+  position: absolute;
+  background-color: #000; /* Fond noir */
+  color: #fff; /* Texte blanc */
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* Par défaut invisible */
+  transition: opacity 0.5s ease-in-out; /* Transition de l'opacité */
+}
+
+@media screen and (max-width: 768px) {
+  .skills-content {
+      grid-template-columns: 1fr; /* Une seule colonne */
+      text-align: center; /* Centrer le texte horizontalement */
+      gap: 50px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .skills-icons {
+      grid-template-columns: repeat(3, 1fr); /* Retour à 3 colonnes */
+      grid-auto-rows: auto; /* Hauteur automatique pour les lignes */
+      gap: 20px; /* Espacement entre les icônes */
+  }
+}
+
+  

@@ -1,0 +1,33 @@
+.banner-container {
+  background-image: url('../../assets/pexels-aryalprakash-3142916.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.banner-content {
+  text-align: center;
+  padding: 220px 0;
+}
+  
+.round-image {
+  border-radius: 50%;
+  width: 200px; /* Ajuste la taille de l'image ronde selon tes besoins */
+  height: 200px; /* Ajuste la taille de l'image ronde selon tes besoins */
+}
+  
+.banner-text {
+  color: #fff;
+  font-size: 26px; /* Ajuste la taille du texte selon tes besoins */
+  margin-top: 20px; /* Espace entre l'image et le texte */
+}
+
+.banner-title {
+  color: #fff;
+  margin-top: -24px;
+  margin-bottom: -20px;
+  font-size: 60px;
+}
+  

@@ -1,0 +1,89 @@
+.projects-container {
+    background-color: #f0f0f0; 
+    padding: 50px;
+    text-align: center;
+}
+  
+.projects-title {
+    color: #333; /* Couleur du texte */
+}
+  
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    max-width: 2000px;
+    margin: auto;
+}
+  
+.project-grid.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card {
+    background-color: #d9d9d9;  
+    border: 1px solid #d9d9d9; 
+    border-radius: 10px; 
+}
+  
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+}
+
+.project-tags {
+    margin: 10px 0;
+    padding: 20px;
+}
+  
+.tag {
+    display: inline-block;
+    background-color: #282c34;
+    padding: 2px 5px; /* Réduit le padding pour que la bordure soit plus proche du texte */
+    margin-right: 10px;
+    border: 1px solid #282c34;
+    color: #fff;
+    border-radius: 5px; /* Maintient les coins arrondis */
+}
+  
+.source-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    margin-bottom: 20px;
+}
+
+.source-link .icon {
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+  
+.source-link:hover {
+    background-color: #282c34;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr; /* Une colonne pour les écrans de largeur maximale de 768px */
+      gap: 20px;
+      padding: 0; /* Réduit le padding */
+    }
+  
+    .project-card {
+      margin-bottom: 20px; /* Espace entre les cartes */
+    }
+  
+    .project-tags {
+      padding: 10px 20px; /* Réduit le padding */
+    }
+  }
+  
