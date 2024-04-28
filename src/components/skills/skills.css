@@ -20,10 +20,10 @@
 
 .divider {
     width: 2px;
-    height: 0px; /* Hauteur de la barre de séparation */
-    background-color: #fff; /* Blanc */
-    margin: 0 auto; /* Centre horizontalement */
-    position: relative; /* Permet le positionnement absolu */
+    height: 0px; 
+    background-color: #fff; 
+    margin: 0 auto; 
+    position: relative; 
     transition: height 0.5s ease-in-out; /* Transition lisse pour la hauteur */
 }
 
@@ -34,7 +34,7 @@
   
 .skills-icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 50px; /* Espacement entre les icônes */
     opacity: 0;
     transform: translateY(-20px);
@@ -62,8 +62,8 @@
   
 .tooltip {
   position: absolute;
-  background-color: #000; /* Fond noir */
-  color: #fff; /* Texte blanc */
+  background-color: #000; 
+  color: #fff; 
   padding: 10px;
   border-radius: 5px;
   opacity: 0; /* Par défaut invisible */

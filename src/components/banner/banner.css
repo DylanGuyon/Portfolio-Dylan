@@ -14,13 +14,13 @@
   
 .round-image {
   border-radius: 50%;
-  width: 200px; /* Ajuste la taille de l'image ronde selon tes besoins */
-  height: 200px; /* Ajuste la taille de l'image ronde selon tes besoins */
+  width: 200px; 
+  height: 200px; 
 }
   
 .banner-text {
   color: #fff;
-  font-size: 26px; /* Ajuste la taille du texte selon tes besoins */
+  font-size: 26px; 
   margin-top: 20px; /* Espace entre l'image et le texte */
 }
 

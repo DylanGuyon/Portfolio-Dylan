@@ -7,7 +7,7 @@ function Header() {
     const element = document.querySelector(target);
     window.scrollTo({
       top: element.offsetTop,
-      behavior: 'smooth' // Utilise le défilement fluide
+      behavior: 'smooth' 
     });
   }
 

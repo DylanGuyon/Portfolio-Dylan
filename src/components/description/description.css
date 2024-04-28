@@ -13,18 +13,18 @@
 
 .description-text {
     max-width: 600px; /* Largeur maximale du texte */
-    width: 100%; /* Utilisation de 100% de l'espace disponible */
-    text-align: center; /* Centre le texte horizontalement */
-    color: #fff; /* Texte blanc */
-    flex: 1; /* Permet au texte d'occuper l'espace restant après l'image */
+    width: 100%; 
+    text-align: center; 
+    color: #fff; 
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre le contenu du texte verticalement */
-    align-items: center; /* Centre les éléments enfants horizontalement dans leur conteneur */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .description-text h1, .description-text h2, .description-text p {
-    margin: 2px 0; /* Réduit la marge en haut et en bas */
+    margin: 2px 0; 
     padding: -150px;
 }
   
@@ -39,13 +39,13 @@
 }
   
 .description-image {
-    flex: 0 0 auto; /* Flexibilité de la largeur de l'image */
+    flex: 0 0 auto; 
 }
   
 .description-image img {
-    width: 100%; /* L'image prend toute la largeur du conteneur de l'image */
-    max-width: 800px; /* Largeur maximale de l'image */
-    height: auto; /* L'image conserve ses proportions */
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
     border-radius: 10px; /* Bords arrondis */
 }
 
