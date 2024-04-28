@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portoflio-Dylan/static/css/main.f69c49f3.css",
+    "main.js": "/Portoflio-Dylan/static/js/main.335be86b.js",
+    "static/js/453.0e70be9f.chunk.js": "/Portoflio-Dylan/static/js/453.0e70be9f.chunk.js",
+    "static/media/test1.jpg": "/Portoflio-Dylan/static/media/test1.5dabfde2d3d6562d460c.jpg",
+    "static/media/pexels-aryalprakash-3142916.jpg": "/Portoflio-Dylan/static/media/pexels-aryalprakash-3142916.27beeace75949defe64f.jpg",
+    "static/media/Screenshot_1.png": "/Portoflio-Dylan/static/media/Screenshot_1.b4d40ca253abe18a67f2.png",
+    "static/media/Screenshot_2.png": "/Portoflio-Dylan/static/media/Screenshot_2.708c0b21557987187a3e.png",
+    "static/media/Screenshot_112.png": "/Portoflio-Dylan/static/media/Screenshot_112.55f30096fdb53a372533.png",
+    "static/media/web-coding.jpg": "/Portoflio-Dylan/static/media/web-coding.877b7b3ab2e29b243534.jpg",
+    "static/media/test2.jpg": "/Portoflio-Dylan/static/media/test2.e1c9a3968599b357be8d.jpg",
+    "static/media/IMG20240428152424.jpg": "/Portoflio-Dylan/static/media/IMG20240428152424.6d478a4491c029830e33.jpg",
+    "static/media/react.png": "/Portoflio-Dylan/static/media/react.863fd5ea6fb840067808.png",
+    "static/media/sass.png": "/Portoflio-Dylan/static/media/sass.8a0f54e3e8923708c85c.png",
+    "index.html": "/Portoflio-Dylan/index.html",
+    "main.f69c49f3.css.map": "/Portoflio-Dylan/static/css/main.f69c49f3.css.map",
+    "main.335be86b.js.map": "/Portoflio-Dylan/static/js/main.335be86b.js.map",
+    "453.0e70be9f.chunk.js.map": "/Portoflio-Dylan/static/js/453.0e70be9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f69c49f3.css",
+    "static/js/main.335be86b.js"
+  ]
+}
