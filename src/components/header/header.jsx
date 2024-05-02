@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header>
-      <div className="header-logo">Dylan .G</div>
+      <a href="/Portfolio-Dylan/"><div className="header-logo">Dylan .G</div></a>
       <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
         <button className="menu-toggle" onClick={toggleMenu}>
           <span></span>
